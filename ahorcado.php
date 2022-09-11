@@ -1,4 +1,17 @@
 <?php
+
+
+function clear() {
+
+    if (PHP_OS === "WINNT") {
+        system("cls");
+    }
+    else {
+        system("clear");
+    }
+    
+}
+
 $possible_words = [
     "Bebida","Prisma","Ala","Dolor","Piloto","Baldosa",
     "Terremoto","Asteroide","Gallo","Platzi",
